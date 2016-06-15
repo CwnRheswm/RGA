@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Denne Sketchy';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/denne-sketchy-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/denne-sketchy-webfont.woff2") format("woff2"), url("/assets/denne-sketchy-webfont.woff") format("woff"), url("/assets/denne-sketchy-webfont.ttf") format(truetype), url("/assets/denne-sketchy-webfont.svg#denne__sketchyregular") format("svg");
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("/assets/roboto-light.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'RobotoC';
+  src: url("/assets/robotocondensed-regular.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'RoboSlab';
+  src: url("/assets/robotoslab-light.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Denne Sketchy';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/denne-sketchy-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/denne-sketchy-webfont.woff2") format("woff2"), url("/assets/denne-sketchy-webfont.woff") format("woff"), url("/assets/denne-sketchy-webfont.ttf") format(truetype), url("/assets/denne-sketchy-webfont.svg#denne__sketchyregular") format("svg");
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("/assets/roboto-light.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'RobotoC';
+  src: url("/assets/robotocondensed-regular.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'RoboSlab';
+  src: url("/assets/robotoslab-light.ttf") format(truetype);
+}
+li {
+  display: block;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font: 8rem Denne Sketchy, Helvetica, sans;
+}
+
+.body-wrapper {
+  background-color: #FFFFFF;
+  width: 1144px;
+  margin: 0 auto;
+}
+
+.header .home-button {
+  width: 8%;
+}
+
+#welcome .super-title {
+  padding: 5% 8% 0;
+}
+#welcome .title {
+  font: 8rem Denne Sketchy, Helvetica, sans;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 6%;
+  text-align: center;
+}
+#welcome img {
+  display: block;
+}
+#welcome div {
+  font: 1.4rem Roboto, Helvetica, sans;
+  text-align: center;
+  padding: 2% 6% 4%;
+}
+#welcome .hero-image {
+  height: 49%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  background-color: #000000;
+}
+#welcome .hero-image #background {
+  position: relative;
+  height: 100%;
+  width: 77%;
+  top: 12px;
+  left: 13%;
+}
+#welcome .hero-image .iframe-click {
+  position: absolute;
+  top: 42%;
+  left: 47%;
+}
+#welcome .hero-image .iframe-click img {
+  height: 15%;
+}
+#welcome .hero-image .iframe-click.close {
+  top: 3%;
+  right: 3%;
+}
+#welcome .hero-image iframe {
+  height: 100%;
+  width: 80%;
+  bottom: 0;
+  left: 10%;
+  position: absolute;
+}
+#welcome #subtitle {
+  position: relative;
+  height: 9%;
+  padding: 0;
+}
+#welcome #subtitle img {
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  width: 95%;
+}
+
+.exhibits {
+  padding: 0;
+}
+.exhibits .exhibit-wrapper {
+  position: relative;
+  height: 30%;
+  margin: 1% -2%;
+  overflow: hidden;
+}
+.exhibits .exhibit-wrapper .exhibit {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.exhibits .exhibit-wrapper .ten {
+  left: -45%;
+  height: 112%;
+  top: -9%;
+}
+.exhibits .exhibit-wrapper .ten div {
+  width: 50%;
+}
+.exhibits .exhibit-wrapper .eleven {
+  left: -38%;
+}
+.exhibits .exhibit-wrapper .eleven div {
+  width: 85%;
+}
+.exhibits .exhibit-wrapper .twelve {
+  left: -23%;
+}
+.exhibits .exhibit-wrapper .twelve div {
+  width: 63%;
+}
+.exhibits .exhibit-wrapper .exhibit-text-overlay {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 5%;
+  padding: 0 15%;
+}
+.exhibits .exhibit-wrapper .exhibit-text-overlay p {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 2.5rem;
+  bottom: 28%;
+  position: absolute;
+  margin: 0;
+}
+.exhibits .exhibit-wrapper .exhibit-text-overlay a {
+  position: absolute;
+  float: left;
+  bottom: 8%;
+}
+.exhibits .exhibit-wrapper .exhibit-text-overlay a div {
+  color: #4285f4;
+  float: left;
+  position: relative;
+  font-family: RobotoC;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.exhibits .exhibit-wrapper .exhibit-text-overlay a img {
+  float: left;
+  width: 20%;
+  padding-top: 3%;
+  margin-left: 8%;
+}
+
+.social-bar {
+  background-color: #448bff;
+  height: 13rem;
+  margin-top: 1%;
+}
+.social-bar .social-wrapper {
+  padding: 5% 3% 0;
+}
+.social-bar .social-wrapper div {
+  padding-left: 6%;
+}
+.social-bar .social-wrapper img {
+  width: 52%;
+}
+
+.footer {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.footer .footer-wrapper {
+  height: 50%;
+  overflow: hidden;
+}
+.footer .footer-wrapper img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .body-wrapper {
+    width: 700px;
+  }
+}
+
+/*# sourceMappingURL=body.css.map */

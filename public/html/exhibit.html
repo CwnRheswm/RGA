@@ -1,0 +1,14 @@
+<div class="exhibits col-md-12">
+	<div class="col-md-4" ng-repeat="exhibit in exhibits">
+		<div class="exhibit-wrapper">
+			<img class="exhibit {{exhibit.id}}" src={{exhibit.image}}>
+			<div class="exhibit-text-overlay">
+				<p>{{exhibit.snippet}}</p>
+				<a href="Exhibit">
+					<div>EXPLORE</div>
+					<img src="assets/Circle-Arrow-blue.png">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

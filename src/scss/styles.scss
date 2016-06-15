@@ -1,0 +1,26 @@
+$default-body-font: 1.4rem Roboto, Helvetica, sans;
+$denne: 8rem Denne Sketchy, Helvetica, sans;
+$robotC: 1.4rem RobotoC, Helvetica, sans;
+
+@font-face {
+  font-family: 'Denne Sketchy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/denne-sketchy-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/denne-sketchy-webfont.woff2') format('woff2'),
+       url('/assets/denne-sketchy-webfont.woff') format('woff'),
+       url('/assets/denne-sketchy-webfont.ttf') format(truetype),
+       url('/assets/denne-sketchy-webfont.svg#denne__sketchyregular') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/roboto-light.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'RobotoC';
+  src: url('/assets/robotocondensed-regular.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'RoboSlab';
+  src: url('/assets/robotoslab-light.ttf') format(truetype);
+}
