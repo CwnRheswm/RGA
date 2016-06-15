@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: 'RoboSlab';
-  src: url("/assets/robotoslab-light.ttf") format(truetype);
+  src: url("/assets/robotoslab-thin.ttf") format(truetype);
 }
 @font-face {
   font-family: 'Denne Sketchy';
@@ -32,8 +32,12 @@
 }
 @font-face {
   font-family: 'RoboSlab';
-  src: url("/assets/robotoslab-light.ttf") format(truetype);
+  src: url("/assets/robotoslab-thin.ttf") format(truetype);
 }
+body {
+  width: 1144px;
+}
+
 li {
   display: block;
   overflow: hidden;
@@ -47,9 +51,14 @@ h1 {
   font: 8rem Denne Sketchy, Helvetica, sans;
 }
 
+@media (max-width: 1144px) {
+  body {
+    width: 331px;
+  }
+}
 .body-wrapper {
   background-color: #FFFFFF;
-  width: 1144px;
+  max-width: 1144px;
   margin: 0 auto;
 }
 
@@ -163,8 +172,7 @@ h1 {
 }
 .exhibits .exhibit-wrapper .exhibit-text-overlay p {
   color: #FFFFFF;
-  font-family: Roboto;
-  font-size: 2.5rem;
+  font: 2.5rem RoboSlab, Helvetica, sans;
   bottom: 28%;
   position: absolute;
   margin: 0;
@@ -178,9 +186,7 @@ h1 {
   color: #4285f4;
   float: left;
   position: relative;
-  font-family: RobotoC;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font: 1.4rem RobotoC, Helvetica, sans;
 }
 .exhibits .exhibit-wrapper .exhibit-text-overlay a img {
   float: left;
@@ -197,6 +203,9 @@ h1 {
 .social-bar .social-wrapper {
   padding: 5% 3% 0;
 }
+.social-bar .social-wrapper #soc-fb {
+  width: 30%;
+}
 .social-bar .social-wrapper div {
   padding-left: 6%;
 }
@@ -210,15 +219,44 @@ h1 {
 }
 .footer .footer-wrapper {
   height: 50%;
-  overflow: hidden;
 }
 .footer .footer-wrapper img {
   width: 100%;
 }
 
-@media only screen and (min-width: 700px) {
+@media (max-width: 1144px) {
   .body-wrapper {
-    width: 700px;
+    width: 331px;
+  }
+
+  #welcome .super-title {
+    padding: 0;
+    margin: auto;
+  }
+
+  .header .home-button {
+    width: 16%;
+  }
+
+  .exhibits .exhibit-wrapper {
+    height: 45%;
+  }
+  .exhibits .exhibit-wrapper .exhibit-text-overlay a {
+    width: 27%;
+  }
+  .exhibits .exhibit-wrapper .exhibit-text-overlay a div {
+    font-size: 3.4rem;
+  }
+  .exhibits .exhibit-wrapper .exhibit-text-overlay p {
+    font-size: 5.5rem;
+  }
+
+  .social-bar .social-wrapper div {
+    float: left;
+    width: 25%;
+  }
+  .social-bar .social-wrapper #soc-fb {
+    width: 26%;
   }
 }
 

@@ -1,5 +1,8 @@
 @import 'styles';
 
+body {
+	width: 1144px
+}
 li {
 	display: block;
 	overflow: hidden;
@@ -9,4 +12,10 @@ a {
 }
 h1 {
 	font: $denne;
+}
+
+@media (max-width: 1144px) {
+	body {
+		width: 331px;
+	}
 }

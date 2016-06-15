@@ -1,0 +1,1 @@
+to run project 'npm install & npm start' open localhost:8000

@@ -3,7 +3,7 @@
 
 .body-wrapper {
 	background-color: #FFFFFF;
-	width: 1144px;
+	max-width: 1144px;
 	margin: 0 auto;
 }
 .header {
@@ -115,8 +115,7 @@
 			padding: 0 15%;
 			p {
 				color: #FFFFFF;
-				font-family: Roboto;
-				font-size: 2.5rem;
+				font: $roboSlab;
 				bottom: 28%;
 				position: absolute;
 				margin: 0;
@@ -129,9 +128,7 @@
 					color: rgba(66,133,244,1);
 					float: left;
 					position: relative;
-					font-family: RobotoC;
-					font-size: 1.5rem;
-					font-weight: 700;
+					font: $robotC;
 				}
 				img {
 					float: left;
@@ -149,6 +146,9 @@
 	margin-top: 1%;
 	.social-wrapper {
 		padding: 5% 3% 0;
+		#soc-fb {
+			width: 30%;
+		}
 		div {
 			padding-left: 6%;
 		}
@@ -162,15 +162,51 @@
 	background-color: #f7f7f7;
 	.footer-wrapper {
 		height: 50%;
-		overflow: hidden;
 		img {
 			width: 100%;
 		}
 	}
 }
-
-@media only screen and (min-width: 700px) {
-	.body-wrapper{
-		width: 700px;
+@media (max-width: 1144px) {
+	.body-wrapper {
+		width: 331px;
+	}
+	#welcome {
+		.super-title {
+			padding: 0;
+			margin: auto;
+		}
+	}
+	.header {
+		.home-button {
+			width: 16%;
+		}
+	}
+	.exhibits {
+		.exhibit-wrapper {
+			height: 45%;
+			.exhibit-text-overlay {
+				a {
+					width: 27%;
+					div {
+						font-size: 3.4rem;
+					}
+				}
+				p {
+					font-size: 5.5rem;
+				}
+			}
+		}
+	}
+	.social-bar {
+		.social-wrapper {
+			div {
+				float: left;
+				width: 25%;
+			}
+			#soc-fb {
+				width: 26%;
+			}
+		}
 	}
 }

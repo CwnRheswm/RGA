@@ -14,8 +14,12 @@
 }
 @font-face {
   font-family: 'RoboSlab';
-  src: url("/assets/robotoslab-light.ttf") format(truetype);
+  src: url("/assets/robotoslab-thin.ttf") format(truetype);
 }
+body {
+  width: 1144px;
+}
+
 li {
   display: block;
   overflow: hidden;
@@ -27,6 +31,12 @@ a {
 
 h1 {
   font: 8rem Denne Sketchy, Helvetica, sans;
+}
+
+@media (max-width: 1144px) {
+  body {
+    width: 331px;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
