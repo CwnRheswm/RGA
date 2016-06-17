@@ -1,12 +1,14 @@
 <div class="exhibits col-sm-12">
-	<div class="col-sm-4" ng-repeat="exhibit in exhibits">
-		<div class="exhibit-wrapper">
-			<img class="exhibit {{exhibit.id}}" src={{exhibit.image}}>
-			<div class="exhibit-text-overlay">
+	<div class="col-md-4 col-xs-12 exhibit" ng-repeat="exhibit in exhibits">
+		<div class="exhibit-wrapper" id={{exhibit.id}}>
+			<div class="exhibit-video-wrapper" ng-show="showVideo">
+				<iframe class="exhibit-video" ng-show="showVideo" src="{{exhibit.video | trustAsResourceUrl}}"></iframe>
+				<span class="exhibit-video-close" ng-show="showVideo" ng-click="showVideo = ! showVideo">X</span>
+			</div>
+			<div class="exhibit-text-overlay" ng-show="!showVideo">
 				<p>{{exhibit.snippet}}</p>
-				<a href="Exhibit">
+				<a ng-click="showVideo = ! showVideo">
 					<div>EXPLORE</div>
-					<img src="assets/circle-arrow-blue.png">
 				</a>
 			</div>
 		</div>

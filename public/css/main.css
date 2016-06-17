@@ -35,7 +35,9 @@
   src: url("/assets/robotoslab-thin.ttf") format(truetype);
 }
 body {
-  width: 1144px;
+  max-width: 1144px;
+  padding: 0;
+  margin: 0 auto !important;
 }
 
 li {
@@ -48,63 +50,67 @@ a {
 }
 
 h1 {
-  font: 8rem Denne Sketchy, Helvetica, sans;
+  font: 8.3rem Denne Sketchy, Helvetica, sans;
 }
 
+@media (max-width: 662px) {
+  body {
+    max-width: 331px;
+  }
+}
 @media (max-width: 1144px) {
   body {
-    width: 331px;
+    max-width: 737px;
   }
 }
 .body-wrapper {
-  background-color: #FFFFFF;
-  max-width: 1144px;
-  margin: 0 auto;
+  padding: 0 15px !important;
+  margin: 0 !important;
 }
 
-.header .home-button {
-  width: 8%;
+.header {
+  background: url("/assets/home-button.png") no-repeat;
+  background-size: contain;
+  height: 55px;
+  margin: 8px 6px;
 }
 
+#welcome {
+  padding: 0 !important;
+}
 #welcome .super-title {
-  padding: 5% 8% 0;
+  height: 70px;
+  padding: 39px 85px 0 84px;
 }
 #welcome .title {
-  font: 8rem Denne Sketchy, Helvetica, sans;
-  margin-bottom: 0;
+  font: 8.3rem Denne Sketchy, Helvetica, sans;
+  padding-left: 68px;
   margin-top: 0;
-  padding: 0 6%;
-  text-align: center;
 }
-#welcome img {
-  display: block;
-}
-#welcome div {
+#welcome .splash-text {
   font: 1.4rem Roboto, Helvetica, sans;
   text-align: center;
-  padding: 2% 6% 4%;
+  padding: 6px 0 40px;
+  line-height: 22px;
 }
 #welcome .hero-image {
-  height: 49%;
-  width: 100%;
-  overflow: hidden;
-  padding: 0;
+  height: 650px;
   background-color: #000000;
 }
 #welcome .hero-image #background {
-  position: relative;
+  background: url("/assets/hero.png") no-repeat;
+  background-size: contain;
   height: 100%;
-  width: 77%;
-  top: 12px;
-  left: 13%;
+  margin-left: 132px;
 }
 #welcome .hero-image .iframe-click {
   position: absolute;
-  top: 42%;
-  left: 47%;
-}
-#welcome .hero-image .iframe-click img {
-  height: 15%;
+  top: 266px;
+  left: 515px;
+  width: 80px;
+  height: 80px;
+  background: url("/assets/play-circle.png") no-repeat;
+  background-size: contain;
 }
 #welcome .hero-image .iframe-click.close {
   top: 3%;
@@ -118,57 +124,44 @@ h1 {
   position: absolute;
 }
 #welcome #subtitle {
-  position: relative;
-  height: 9%;
-  padding: 0;
-}
-#welcome #subtitle img {
-  position: absolute;
-  top: 45%;
-  left: 2%;
-  width: 95%;
+  height: 104px;
+  background: url("/assets/look.png") no-repeat center;
 }
 
 .exhibits {
-  padding: 0;
+  padding: 0 0 1px 0 !important;
+}
+.exhibits #ten {
+  background-image: url("/assets/exhibit-season0.png");
+}
+.exhibits #eleven {
+  background-image: url("/assets/exhibit-golden-years.png");
+}
+.exhibits #twelve {
+  background-image: url("/assets/exhibit-sam.png");
+}
+.exhibits .exhibit {
+  height: 400px;
+  padding: 0 8px 0 5px;
 }
 .exhibits .exhibit-wrapper {
+  height: 100%;
   position: relative;
-  height: 30%;
-  margin: 1% -2%;
   overflow: hidden;
+  background: no-repeat center;
+  background-size: cover;
 }
 .exhibits .exhibit-wrapper .exhibit {
   position: absolute;
   height: 100%;
   top: 0;
 }
-.exhibits .exhibit-wrapper .ten {
-  left: -45%;
-  height: 112%;
-  top: -9%;
-}
-.exhibits .exhibit-wrapper .ten div {
-  width: 50%;
-}
-.exhibits .exhibit-wrapper .eleven {
-  left: -38%;
-}
-.exhibits .exhibit-wrapper .eleven div {
-  width: 85%;
-}
-.exhibits .exhibit-wrapper .twelve {
-  left: -23%;
-}
-.exhibits .exhibit-wrapper .twelve div {
-  width: 63%;
-}
 .exhibits .exhibit-wrapper .exhibit-text-overlay {
   width: 100%;
   height: 50%;
   position: absolute;
   bottom: 5%;
-  padding: 0 15%;
+  padding: 0 10%;
 }
 .exhibits .exhibit-wrapper .exhibit-text-overlay p {
   color: #FFFFFF;
@@ -187,12 +180,26 @@ h1 {
   float: left;
   position: relative;
   font: 1.4rem RobotoC, Helvetica, sans;
+  background: url("/assets/circle-arrow-blue.png") no-repeat right;
+  background-size: contain;
+  padding: 0 20px 0 0;
 }
-.exhibits .exhibit-wrapper .exhibit-text-overlay a img {
-  float: left;
-  width: 20%;
-  padding-top: 3%;
-  margin-left: 8%;
+.exhibits .exhibit-wrapper .exhibit-video-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+.exhibits .exhibit-wrapper .exhibit-video-wrapper .exhibit-video {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+}
+.exhibits .exhibit-wrapper .exhibit-video-wrapper .exhibit-video-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #FFFFFF;
+  font-size: 2.5rem;
 }
 
 .social-bar {
@@ -201,13 +208,27 @@ h1 {
   margin-top: 1%;
 }
 .social-bar .social-wrapper {
-  padding: 5% 3% 0;
+  padding: 60px 26px 0 14px;
 }
-.social-bar .social-wrapper #soc-fb {
-  width: 30%;
+.social-bar .social-wrapper .fb {
+  background: url("/assets/soc-facebook.png") no-repeat center;
+  background-size: contain;
+}
+.social-bar .social-wrapper .gplus {
+  background: url("/assets/soc-google-plus.png") no-repeat center;
+  background-size: contain;
+}
+.social-bar .social-wrapper .twitter {
+  background: url("/assets/soc-twitter.png") no-repeat center;
+  background-size: contain;
+}
+.social-bar .social-wrapper .pin {
+  background: url("/assets/soc-pinterest.png") no-repeat center;
+  background-size: contain;
 }
 .social-bar .social-wrapper div {
   padding-left: 6%;
+  min-height: 26px;
 }
 .social-bar .social-wrapper img {
   width: 52%;
@@ -223,32 +244,110 @@ h1 {
 .footer .footer-wrapper img {
   width: 100%;
 }
+.footer .footer-wrapper .mobile {
+  display: none !important;
+}
 
 @media (max-width: 1144px) {
-  .body-wrapper {
-    width: 331px;
-  }
-
   #welcome .super-title {
-    padding: 0;
-    margin: auto;
+    height: 102px;
+    padding: 59px 82px 0 126px;
   }
-
-  .header .home-button {
-    width: 16%;
+  #welcome .title {
+    text-align: center;
+  }
+  #welcome .splash-text {
+    font-size: 3rem;
+    padding: 6px 49px 21px 21px;
+    line-height: 46px;
+  }
+  #welcome .hero-image {
+    height: 387px;
+    padding: 0 28px !important;
+  }
+  #welcome .hero-image #background {
+    margin: 0;
+    background-size: initial;
+    background-position: 0 -50px;
+  }
+  #welcome .hero-image .iframe-click {
+    top: 128px;
+    width: 70px;
+    height: 70px;
+    left: 340px;
+  }
+  #welcome #subtitle {
+    margin: 0 25%;
   }
 
   .exhibits .exhibit-wrapper {
-    height: 45%;
-  }
-  .exhibits .exhibit-wrapper .exhibit-text-overlay a {
-    width: 27%;
-  }
-  .exhibits .exhibit-wrapper .exhibit-text-overlay a div {
-    font-size: 3.4rem;
+    height: 90%;
   }
   .exhibits .exhibit-wrapper .exhibit-text-overlay p {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
+  }
+  .exhibits .exhibit-wrapper .exhibit-text-overlay a {
+    width: 125px;
+  }
+  .exhibits .exhibit-wrapper .exhibit-text-overlay a div {
+    width: 100%;
+    font-size: 2.4rem;
+  }
+
+  .footer .footer-wrapper .social-bar .social-wrapper {
+    padding-top: 50px;
+  }
+  .footer .footer-wrapper .social-bar .social-wrapper div {
+    float: left;
+    min-height: 40px;
+  }
+  .footer .footer-wrapper .social-bar .social-wrapper #soc-fb {
+    width: 26%;
+  }
+  .footer .footer-wrapper .desktop {
+    display: none !important;
+  }
+  .footer .footer-wrapper .mobile {
+    display: block !important;
+  }
+}
+@media (max-width: 662px) {
+  .header {
+    height: 103px;
+    margin: 18px 0 0 55px;
+  }
+
+  #welcome .super-title {
+    height: 102px;
+    padding: 59px 86px 0 43px;
+  }
+  #welcome .title {
+    padding: 3px 0 0 66px;
+  }
+  #welcome .splash-text {
+    font-size: 3rem;
+    padding: 6px 49px 21px 21px;
+    line-height: 46px;
+  }
+  #welcome .hero-image {
+    height: 387px;
+    padding: 0 28px !important;
+  }
+  #welcome .hero-image #background {
+    margin: 0;
+    background-position: -29px -37px;
+    background-size: initial;
+  }
+  #welcome .hero-image .iframe-click {
+    top: 128px;
+    left: 267px;
+    width: 70px;
+    height: 70px;
+  }
+  #welcome #subtitle {
+    height: 142px;
+    background-position: left;
+    margin-left: 123px;
   }
 
   .social-bar .social-wrapper div {

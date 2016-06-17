@@ -2,54 +2,49 @@
 @import 'global';
 
 .body-wrapper {
-	background-color: #FFFFFF;
-	max-width: 1144px;
-	margin: 0 auto;
+	padding: 0 15px!important;
+	margin: 0!important;
 }
 .header {
-	.home-button {
-		width: 8%;
-	}
+		background: url("/assets/home-button.png") no-repeat;
+		background-size: contain;
+		height: 55px;
+		margin: 8px 6px;
 }
 #welcome {
-	.super-title{
-		padding: 5% 8% 0;
+	padding: 0!important;
+	.super-title {
+		height: 70px;
+		padding: 39px 85px 0 84px;
 	}
-	.title{
+	.title {
 		font: $denne;
-		margin-bottom: 0;
+		padding-left: 68px;
 		margin-top: 0;
-		padding: 0 6%;
-		text-align: center;											
 	}
-	img {
-		display: block;
-	}
-	div {
+	.splash-text {
 		font: $default-body-font;
 		text-align: center;
-		padding: 2% 6% 4%; 
+		padding: 6px 0 40px;
+		line-height: 22px;
 	}
 	.hero-image {
-		height: 49%;
-		width: 100%;
-		overflow: hidden;
-		padding: 0;
+		height: 650px;
 		background-color: #000000;
 		#background {
-			position: relative;
+			background: url("/assets/hero.png") no-repeat;
+			background-size: contain;
 			height: 100%;
-			width: 77%;
-			top: 12px;
-			left: 13%;
+			margin-left: 132px;
 		}
 		.iframe-click {
 			position: absolute;
-			top: 42%;
-			left: 47%;
-			img {
-				height: 15%;
-			}
+			top: 266px;
+			left: 515px;
+			width: 80px;
+			height: 80px;
+			background: url("/assets/play-circle.png") no-repeat;
+			background-size: contain;
 		}
 		.iframe-click.close{
 			top: 3%;
@@ -64,55 +59,42 @@
 		}
 	}
 	#subtitle {
-		position: relative;
-		height: 9%;
-		padding: 0;
-		img {
-			position: absolute;
-			top: 45%;
-			left: 2%;
-			width: 95%;
-		}
+		height: 104px;
+		background: url("/assets/look.png") no-repeat center;
 	}
 }
 .exhibits {
-	padding: 0;
+	padding: 0 0 1px 0!important;
+	#ten {
+		background-image: url("/assets/exhibit-season0.png");
+	}
+	#eleven {
+		background-image: url("/assets/exhibit-golden-years.png");
+	}
+	#twelve {
+		background-image: url("/assets/exhibit-sam.png");
+	}
+	.exhibit {
+		height: 400px;
+		padding: 0 8px 0 5px;
+	}
 	.exhibit-wrapper {
+		height: 100%;
 		position: relative;
-		height: 30%;
-		margin: 1% -2%;
 		overflow: hidden;
+		background: no-repeat center;
+		background-size: cover;
 		.exhibit {
 			position: absolute;
 			height: 100%;
 			top: 0;
-		}
-		.ten {
-			left: -45%;
-			height: 112%;
-			top: -9%;
-			div {
-				width: 50%;
-			}
-		}
-		.eleven {
-			left: -38%;
-			div {
-				width: 85%;
-			}
-		}
-		.twelve {
-			left: -23%;
-			div {
-				width: 63%;
-			}
 		}
 		.exhibit-text-overlay {
 			width: 100%;
 			height: 50%;
 			position: absolute;
 			bottom: 5%;
-			padding: 0 15%;
+			padding: 0 10%;
 			p {
 				color: #FFFFFF;
 				font: $roboSlab;
@@ -129,13 +111,27 @@
 					float: left;
 					position: relative;
 					font: $robotC;
+					background: url("/assets/circle-arrow-blue.png") no-repeat right;
+					background-size: contain;
+					padding: 0 20px 0 0;
 				}
-				img {
-					float: left;
-					width: 20%;
-					padding-top: 3%;
-					margin-left: 8%;
-				}
+			}
+		}
+		.exhibit-video-wrapper {
+			height: 100%;
+			width: 100%;
+			background-color: #000000;
+			.exhibit-video {
+				width: 100%;
+				height: 80%;
+				margin-top: 10%;
+			}
+			.exhibit-video-close {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				color: #FFFFFF;
+				font-size: 2.5rem;
 			}
 		}
 	}
@@ -145,12 +141,26 @@
 	height: 13rem;
 	margin-top: 1%;
 	.social-wrapper {
-		padding: 5% 3% 0;
-		#soc-fb {
-			width: 30%;
+		padding: 60px 26px 0 14px;
+		.fb {
+			background: url("/assets/soc-facebook.png") no-repeat center;
+			background-size: contain;
+		}
+		.gplus {
+			background: url("/assets/soc-google-plus.png") no-repeat center;
+			background-size: contain;
+		}
+		.twitter {
+			background: url("/assets/soc-twitter.png") no-repeat center;
+			background-size: contain;
+		}
+		.pin {
+			background: url("/assets/soc-pinterest.png") no-repeat center;
+			background-size: contain;
 		}
 		div {
 			padding-left: 6%;
+			min-height: 26px;
 		}
 		img {
 			width: 52%;
@@ -165,36 +175,129 @@
 		img {
 			width: 100%;
 		}
+		.mobile {
+			display: none!important;
+		}
 	}
 }
 @media (max-width: 1144px) {
-	.body-wrapper {
-		width: 331px;
-	}
 	#welcome {
 		.super-title {
-			padding: 0;
-			margin: auto;
+			height: 102px;
+			padding: 59px 82px 0 126px;
 		}
-	}
-	.header {
-		.home-button {
-			width: 16%;
+		.title {
+			text-align: center;
+		}
+		.splash-text {
+			font-size: 3rem;
+			padding: 6px 49px 21px 21px;
+			line-height: 46px;
+		}
+		.hero-image {
+			height: 387px;
+			padding: 0 28px!important;
+			#background {
+				margin: 0;
+				background-size: initial;
+				background-position: 0 -50px;
+			}
+			.iframe-click {
+				top: 128px;
+				width: 70px;
+				height: 70px;
+				left: 340px;
+			}
+		}
+		#subtitle {
+			margin: 0 25%;
 		}
 	}
 	.exhibits {
 		.exhibit-wrapper {
-			height: 45%;
+			height: 90%;
 			.exhibit-text-overlay {
+				p {
+					font-size: 4.5rem;
+				}
 				a {
-					width: 27%;
+					width: 125px;
 					div {
-						font-size: 3.4rem;
+						width: 100%;
+						font-size: 2.4rem;
 					}
 				}
-				p {
-					font-size: 5.5rem;
+			}
+		}
+	}
+	.footer {
+		.footer-wrapper {
+			.social-bar {
+				.social-wrapper {
+					padding-top: 50px;
+					div {
+						float: left;
+						min-height: 40px;
+					}
+					#soc-fb {
+						width: 26%;
+					}
 				}
+			}
+			.desktop {
+				display: none!important;
+			}
+			.mobile {
+				display: block!important;
+			}
+		}
+	}
+}
+@media (max-width: 662px) {
+	.body-wrapper {
+	}
+	.header {
+		height: 103px;
+		margin: 18px 0 0 55px;
+	}
+	#welcome {
+		.super-title {
+			height: 102px;
+			padding: 59px 86px 0 43px;
+		}
+		.title {
+			padding: 3px 0 0 66px;
+		}
+		.splash-text {
+			font-size: 3rem;
+			padding: 6px 49px 21px 21px;
+			line-height: 46px;
+		}
+		.hero-image {
+			height: 387px;
+			padding: 0 28px!important;
+			#background {
+				margin: 0;
+				background-position: -29px -37px;
+				background-size: initial;
+			}
+			.iframe-click {
+				top: 128px;
+				left: 267px;
+				width: 70px;
+				height: 70px;
+			}
+		}
+		#subtitle {
+			height: 142px;
+			background-position: left;
+			margin-left: 123px;
+		}
+	}
+	.exhibits {
+		.exhibit-wrapper {
+			.exhibit-text-overlay {
+
 			}
 		}
 	}
